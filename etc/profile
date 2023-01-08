@@ -214,7 +214,7 @@ export PATH=$PATH:/c/Windows/system32
 export INFOPATH=$INFOPATH:/mingw64/share/info
 export PATH=$PATH:/kimikit/inkscape/bin:/kimikit/doublecmd:/kimikit/firefox
 export PATH=$PATH:/kimikit/LilyPond/usr/bin
-export PATH=/kimikit/emacs/bin:$PATH
+export PATH=/kimikit/emacs/bin:$PATH # comment this will use msys64 emacs
 
 alias syu="pacman -Syu"
 # export https_proxy=127.0.0.1:1080
@@ -225,8 +225,8 @@ export PATH=$PATH:/kimikit/i686/bin
 
 proxy_kimim()
 {
-    export https_proxy=127.0.0.1:1080
-    export http_proxy=127.0.0.1:1080
+    export https_proxy=http://127.0.0.1:1080
+    export http_proxy=http://127.0.0.1:1080
     export JAVA_TOOL_OPTIONS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=1080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=1080"
 }
 
