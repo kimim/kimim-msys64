@@ -1,0 +1,5 @@
+#!/bin/sh
+f=$1
+b="${f%.*}"
+pandoc ${f} -o ${b}.pdf -N --shift-heading-level-by=-1 \
+       --toc --metadata-file=/usr/local/etc/pandoc/metadata.yaml

@@ -1,0 +1,8 @@
+---
+documentclass: scrartcl
+geometry:
+- top=20mm
+- left=20mm
+- right=20mm
+fontsize: 13pt
+---
