@@ -6,7 +6,7 @@ customization:
   rime_version: 1.5.3
 patch:
   app_options:
-# app名称要全部字母都小写！
+    # app名称要全部字母都小写！
     powertoys.powerlauncher.exe: {ascii_mode: true}
     cmd.exe: {ascii_mode: true}
     emacs.exe: {ascii_mode: true}
